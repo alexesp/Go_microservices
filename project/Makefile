@@ -9,7 +9,7 @@ up:
 	@echo "Docker images started!"
 
 ##up_build: stop docker-compose (si esta ejecutandose), compilar todo y start docker compose
-up_build: build_broker build_auth
+up_build: build_broker build_auth build_front
 	@echo "Stopping docker images (if running...)"
 	docker-compose down
 	@echo "Building (when requered) and startin docker images..."
