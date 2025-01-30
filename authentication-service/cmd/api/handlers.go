@@ -8,8 +8,8 @@ import (
 
 func (app *Config) Authenticate(w http.ResponseWriter, r *http.Request) {
 	var requestPayload struct {
-		Email    string `json:"email"`
-		Password string `json:"password"`
+		Email    string `json:"admin@example.com"`
+		Password string `json:"verysecret"`
 	}
 
 	err := app.readJSON(w, r, &requestPayload)
