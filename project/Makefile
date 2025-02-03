@@ -5,7 +5,7 @@ AUTH_BINARY=authApp
 ##up: start todos los contenedores
 up:
 	@echo "Starting Docker imagesl..."
-	docker-compose up -docker
+	docker-compose up
 	@echo "Docker images started!"
 
 ##up_build: stop docker-compose (si esta ejecutandose), compilar todo y start docker compose
